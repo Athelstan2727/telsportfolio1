@@ -79,15 +79,8 @@
                 <div class="h-[400px] w-full relative z-20"> 
                     <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
                                 hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-blue-500/50 hover:shadow-[0_0_100px_rgba(59,130,246,0.3)]">
-                        
-                        <img src="{{ asset('images/tugon1.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Reporting Interface">
-                        
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                        <img src="{{ asset('images/tugon1.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Reporting Interface">
+                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
                     </div>
                 </div>
             </div>
@@ -96,15 +89,8 @@
                 <div class="order-2 lg:order-1 h-[400px] w-full relative z-20"> 
                     <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
                                 hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-amber-500/50 hover:shadow-[0_0_100px_rgba(245,158,11,0.3)]">
-                        
-                        <img src="{{ asset('images/tugon2.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Real Time Dashboard">
-                             
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                        <img src="{{ asset('images/tugon2.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Real Time Dashboard">
+                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
                     </div>
                 </div>
 
@@ -135,25 +121,34 @@
                 <div class="h-[400px] w-full relative z-20"> 
                     <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
                                 hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-sky-500/50 hover:shadow-[0_0_100px_rgba(14,165,233,0.3)]">
-                        
-                        <img src="{{ asset('images/tugon3.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Admin Panel">
-                        
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                        <img src="{{ asset('images/tugon3.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Admin Panel">
+                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="mt-40 text-center reveal">
-            <a href="{{ url('/') }}" class="group relative inline-flex items-center gap-3 px-12 py-5 border border-white/20 text-white hover:border-blue-500 hover:text-blue-400 transition duration-500 uppercase tracking-widest font-bold text-sm rounded-full overflow-hidden">
-                <span class="absolute inset-0 bg-blue-600/10 translate-y-full group-hover:translate-y-0 transition duration-500"></span>
-                <span class="relative">← Back to Portfolio</span>
+        <div class="mt-40 mb-20 text-center reveal">
+            <a href="{{ url('/') }}" class="inline-block group w-full max-w-3xl">
+                <div class="relative overflow-hidden px-6 py-8 md:px-16 md:py-10 border border-white/10 bg-[#0a0a0a] rounded-3xl hover:bg-white/5 hover:border-white/30 transition-all duration-500 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                        <span class="text-4xl md:text-5xl text-white/50 group-hover:text-white transition-all duration-500 group-hover:-translate-x-2">
+                            ←
+                        </span>
+                        
+                        <div class="text-center md:text-left">
+                            <span class="block text-xs font-mono text-gray-500 group-hover:text-gray-300 mb-2 tracking-[0.3em] uppercase transition-colors">
+                                Return to Portfolio
+                            </span>
+                            <span class="block text-2xl md:text-4xl font-black text-white uppercase tracking-tighter leading-none">
+                                Back to Home
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
             </a>
         </div>
 
@@ -177,7 +172,7 @@
         };
 
         window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Trigger once on load
+        revealOnScroll(); 
     });
 </script>
 @endsection
