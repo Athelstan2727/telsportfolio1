@@ -2,11 +2,7 @@
 
 @section('content')
 
-{{-- 
-    CHANGE 1: Button is now visible up to XL screens (Laptop/Tablet friendly) 
-    Changed 'lg:hidden' to 'xl:hidden' 
---}}
-<button id="mobile-menu-toggle" class="xl:hidden fixed top-4 right-4 z-[60] p-3 bg-indigo-600 rounded-lg text-white shadow-lg hover:bg-indigo-500 transition-colors">
+<button id="mobile-menu-toggle" class="lg:hidden fixed top-4 right-4 z-[60] p-3 bg-indigo-600 rounded-lg text-white shadow-lg hover:bg-indigo-500 transition-colors">
     <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
@@ -15,14 +11,9 @@
     </svg>
 </button>
 
-{{-- CHANGE 2: Overlay hidden on XL, not LG --}}
-<div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-[40] hidden backdrop-blur-sm transition-opacity duration-300 xl:hidden"></div>
+<div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-[40] hidden backdrop-blur-sm transition-opacity duration-300 lg:hidden"></div>
 
-{{-- 
-    CHANGE 3: Sidebar logic adjusted to XL (1280px)
-    Changed 'lg:translate-x-0' to 'xl:translate-x-0'
---}}
-<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full xl:translate-x-0 shadow-2xl">
+<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full lg:translate-x-0 shadow-2xl">
     
     <div class="flex flex-col items-center text-center mb-8 md:mb-10">
         <div class="w-20 h-20 md:w-24 md:h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
@@ -37,16 +28,15 @@
     <nav class="flex-1 flex flex-col space-y-2 mb-8 overflow-y-auto">
         <a href="#hero" class="mobile-link group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
             <span class="text-xs md:text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">Home</span>
-            {{-- Updated arrow opacity classes to xl --}}
-            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 xl:opacity-0 xl:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 lg:opacity-0 lg:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
         <a href="#projects-list" class="mobile-link group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
             <span class="text-xs md:text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">Projects</span>
-            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 xl:opacity-0 xl:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 lg:opacity-0 lg:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
         <a href="#about-section" class="mobile-link group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
             <span class="text-xs md:text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">About Me</span>
-            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 xl:opacity-0 xl:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-100 lg:opacity-0 lg:group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
     </nav>
 
@@ -92,22 +82,13 @@
     </div>
 </aside>
 
-{{-- 
-    CHANGE 4: Main Content margin updated to XL 
-    Changed 'lg:ml-[320px]' to 'xl:ml-[320px]'
---}}
-<div id="main-content" class="relative w-full xl:w-auto xl:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
+<div id="main-content" class="relative w-full lg:w-auto lg:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
 
     <section id="hero" class="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-24 relative overflow-hidden border-b border-white/5">
         
         <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
-            {{-- 
-                CHANGE 5: The Identity Card
-                Added 'xl:hidden' - This hides the card on wide screens because the Sidebar is visible there.
-                This prevents the double-identity squeeze.
-            --}}
-            <div class="lg:col-span-5 flex justify-center lg:justify-start order-1 lg:order-1 mt-16 lg:mt-0 xl:hidden">
+            <div class="lg:col-span-5 flex justify-center lg:justify-start order-1 lg:order-1 mt-16 lg:mt-0">
                 <div class="w-full max-w-[340px] bg-black border border-white/10 p-6 rounded-xl shadow-[0_0_60px_-15px_rgba(255,255,255,0.05)] relative transform transition-transform hover:scale-[1.02] duration-500 mx-auto lg:mx-0">
                     
                     <div class="flex justify-between items-center mb-5 border-b border-white/10 pb-3">
@@ -132,22 +113,18 @@
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                              </div>
                              <span class="truncate">athelstanbundalian@gmail.com</span>
-                          </div>
-                          <div class="flex items-center gap-3 group cursor-pointer hover:text-white transition-colors">
-                             <div class="w-6 h-6 rounded bg-white/5 flex items-center justify-center text-gray-500 group-hover:text-white">
+                         </div>
+                         <div class="flex items-center gap-3 group cursor-pointer hover:text-white transition-colors">
+                            <div class="w-6 h-6 rounded bg-white/5 flex items-center justify-center text-gray-500 group-hover:text-white">
                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                              </div>
                              <span>0968 231 3563</span>
-                          </div>
+                         </div>
                     </div>
                 </div>
             </div>
 
-            {{-- 
-                CHANGE 6: Large Text Area
-                Added 'xl:col-span-12' and 'xl:items-center' to center the text when the card disappears.
-            --}}
-            <div class="lg:col-span-7 xl:col-span-12 flex flex-col justify-center items-center lg:items-start xl:items-center space-y-6 md:space-y-4 order-2 lg:order-2 text-center lg:text-left xl:text-center">
+            <div class="lg:col-span-7 flex flex-col justify-center items-center lg:items-start space-y-6 md:space-y-4 order-2 lg:order-2 text-center lg:text-left">
                 <a href="#projects-list" class="group block relative overflow-hidden">
                     <span class="block text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-0 lg:group-hover:translate-x-4 group-hover:italic">
                         Projects
@@ -255,7 +232,7 @@
 
         // Functions
         function toggleMenu() {
-            // Note: On desktop (xl), the sidebar has 'xl:translate-x-0' so this logic primarily affects mobile
+            // Note: On desktop (lg), the sidebar has 'lg:translate-x-0' so this logic primarily affects mobile
             const isClosed = sidebar.classList.contains('-translate-x-full');
             
             if (isClosed) {
@@ -273,35 +250,35 @@
             }
         }
 
-        // SCROLL HANDLER UPDATED TO XL (1280px)
+        // NEW: Scroll Handler for Desktop Sidebar
         function handleDesktopScroll() {
-            // Only apply this logic on XL desktop screens (1280px or higher)
-            if (window.innerWidth >= 1280) {
+            // Only apply this logic on desktop screens (lg breakpoint is 1024px)
+            if (window.innerWidth >= 1024) {
                 // Threshold: 50px (you can adjust this number)
                 if (window.scrollY < 50) {
                     // AT TOP: Hide Sidebar & Expand Content
                     
-                    // 1. Hide Sidebar: remove the forcing class (xl:translate-x-0) and add hide class
-                    sidebar.classList.remove('xl:translate-x-0');
+                    // 1. Hide Sidebar: remove the forcing class (lg:translate-x-0) and add hide class
+                    sidebar.classList.remove('lg:translate-x-0');
                     sidebar.classList.add('-translate-x-full');
                     
                     // 2. Expand Content: Remove the left margin
-                    mainContent.classList.remove('xl:ml-[320px]');
+                    mainContent.classList.remove('lg:ml-[320px]');
                     
                 } else {
                     // SCROLLED DOWN: Show Sidebar & Shrink Content
                     
                     // 1. Show Sidebar
-                    sidebar.classList.add('xl:translate-x-0');
+                    sidebar.classList.add('lg:translate-x-0');
                     sidebar.classList.remove('-translate-x-full');
                     
                     // 2. Shrink Content (Add margin back)
-                    mainContent.classList.add('xl:ml-[320px]');
+                    mainContent.classList.add('lg:ml-[320px]');
                 }
             } else {
-                 // On mobile/tablet/laptop (<1280), ensure we don't accidentally leave desktop classes messing up the layout
+                 // On mobile, ensure we don't accidentally leave desktop classes messing up the layout
                  // if resizing the window
-                 mainContent.classList.remove('xl:ml-[320px]');
+                 mainContent.classList.remove('lg:ml-[320px]');
             }
         }
 
@@ -319,7 +296,7 @@
         // Close menu when a link is clicked
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                if (window.innerWidth < 1280) { // Updated to XL
+                if (window.innerWidth < 1024) { // Only on mobile/tablet
                     toggleMenu();
                 }
             });
