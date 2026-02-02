@@ -13,7 +13,7 @@
 
 <div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-[40] hidden backdrop-blur-sm transition-opacity duration-300 lg:hidden"></div>
 
-<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full lg:translate-x-0 shadow-2xl lg:shadow-none">
+<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full shadow-2xl">
     
     <div class="flex flex-col items-center text-center mb-8 md:mb-10">
         <div class="w-20 h-20 md:w-24 md:h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
@@ -56,7 +56,7 @@
             
              <a href="tel:09682313563" class="flex items-center gap-4 group">
                 <div class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-white/5 flex items-center justify-center text-green-500 border border-white/5 group-hover:bg-green-600 group-hover:text-white group-hover:border-green-500 transition-all duration-300">
-                     <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                      <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                 </div>
                 <div class="overflow-hidden">
                     <p class="text-[9px] text-gray-500 uppercase tracking-wider mb-0.5">Call Me</p>
@@ -82,8 +82,7 @@
     </div>
 </aside>
 
-
-<div class="relative w-full lg:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
+<div class="relative w-full bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
 
     <section id="hero" class="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-24 relative overflow-hidden border-b border-white/5">
         
@@ -249,9 +248,29 @@
             }
         }
 
+        // DESKTOP SCROLL LOGIC (NEW)
+        function handleScroll() {
+            // Only apply this logic on desktop screens (>= 1024px)
+            if (window.innerWidth >= 1024) {
+                if (window.scrollY > 50) {
+                    // User scrolled down: Show Sidebar
+                    sidebar.classList.remove('-translate-x-full');
+                    sidebar.classList.add('translate-x-0');
+                } else {
+                    // User at top: Hide Sidebar
+                    sidebar.classList.add('-translate-x-full');
+                    sidebar.classList.remove('translate-x-0');
+                }
+            }
+        }
+
         // Event Listeners
         toggleBtn.addEventListener('click', toggleMenu);
         overlay.addEventListener('click', toggleMenu);
+        window.addEventListener('scroll', handleScroll); // Listen for scrolling
+        
+        // Initial check for scroll position on load
+        handleScroll(); 
 
         // Close menu when a link is clicked
         mobileLinks.forEach(link => {
