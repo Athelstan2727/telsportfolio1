@@ -147,10 +147,26 @@
 
         </div>
 
-        <div class="mt-40 text-center reveal">
-            <a href="{{ url('/') }}" class="group relative inline-flex items-center gap-3 px-12 py-5 border border-white/20 text-white hover:border-red-500 hover:text-red-400 transition duration-500 uppercase tracking-widest font-bold text-sm rounded-full overflow-hidden">
-                <span class="absolute inset-0 bg-red-600/10 translate-y-full group-hover:translate-y-0 transition duration-500"></span>
-                <span class="relative">← Back to Portfolio</span>
+        <div class="mt-40 mb-20 text-center reveal">
+            <a href="{{ url('/') }}" class="inline-block group w-full md:w-auto">
+                <div class="relative overflow-hidden px-8 py-12 md:px-24 md:py-16 border border-white/10 bg-[#0a0a0a] rounded-3xl hover:bg-red-600 hover:border-red-600 transition-all duration-500 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_60px_rgba(220,38,38,0.4)]">
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                        <span class="text-5xl md:text-7xl text-white/50 group-hover:text-white transition-all duration-500 group-hover:-translate-x-4">
+                            ←
+                        </span>
+                        
+                        <div class="text-center md:text-left">
+                            <span class="block text-xs font-mono text-red-500 group-hover:text-white/80 mb-2 tracking-[0.3em] uppercase transition-colors">
+                                Return to Portfolio
+                            </span>
+                            <span class="block text-3xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                                Back to Home
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
             </a>
         </div>
 
