@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="w-full aspect-square mb-5 bg-zinc-900 overflow-hidden relative grayscale rounded border border-white/5">
+                    <div class="w-full aspect-square mb-5 bg-zinc-900 overflow-hidden relative rounded border border-white/5">
                         <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
                     </div>
 
