@@ -6,7 +6,7 @@
     
     <div class="flex flex-col items-center text-center mb-10">
         <div class="w-24 h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
-            <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover grayscale" alt="Profile">
+            <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
         </div>
         <h2 class="text-xl font-bold text-white uppercase tracking-widest">A. Bundalian</h2>
         <div class="px-3 py-1 mt-2 border border-indigo-500/30 rounded-full bg-indigo-500/10">
