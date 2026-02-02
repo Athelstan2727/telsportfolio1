@@ -131,21 +131,21 @@
 
             <div class="lg:col-span-7 flex flex-col justify-center items-center lg:items-start space-y-4">
                 <a href="#projects-list" class="group block relative overflow-hidden">
-                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4">
+                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4 group-hover:italic">
                         Projects
                     </span>
                     <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">View Selected Works -></span>
                 </a>
 
                 <a href="#about-section" class="group block relative overflow-hidden">
-                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4">
+                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4 group-hover:italic">
                         About Me
                     </span>
                      <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">My Journey & Skills -></span>
                 </a>
 
                 <a href="mailto:athelstanbundalian@gmail.com" class="group block relative overflow-hidden">
-                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4">
+                    <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4 group-hover:italic">
                         Contact Me
                     </span>
                      <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">Let's Work Together -></span>
