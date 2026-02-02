@@ -2,36 +2,71 @@
 
 @section('content')
 
-<aside id="dynamic-sidebar" class="fixed top-0 left-0 h-screen w-[280px] bg-black/95 backdrop-blur-xl border-r border-white/10 z-50 flex flex-col p-6 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+<aside id="dynamic-sidebar" class="fixed top-0 left-0 h-screen w-[320px] bg-[#050505]/95 backdrop-blur-xl border-r border-white/10 z-50 flex flex-col p-8 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full shadow-[0_0_50px_rgba(0,0,0,0.5)]">
     
-    <div class="flex flex-col items-center text-center mb-8 border-b border-white/10 pb-6">
-        <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden border border-white/10">
+    <div class="flex flex-col items-center text-center mb-10">
+        <div class="w-24 h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
             <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover grayscale" alt="Profile">
         </div>
-        <h2 class="text-lg font-bold text-white uppercase tracking-widest">A. Bundalian</h2>
-        <p class="text-[10px] text-indigo-500 font-mono mt-1">Full Stack Developer</p>
+        <h2 class="text-xl font-bold text-white uppercase tracking-widest">A. Bundalian</h2>
+        <div class="px-3 py-1 mt-2 border border-indigo-500/30 rounded-full bg-indigo-500/10">
+            <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Full Stack Developer</p>
+        </div>
     </div>
 
-    <nav class="flex-1 flex flex-col space-y-2">
-        <a href="#hero" class="text-xs font-bold uppercase text-gray-400 hover:text-white hover:bg-white/5 p-3 rounded transition-all flex items-center gap-3">
-            <span>Home</span>
+    <nav class="flex-1 flex flex-col space-y-2 mb-8">
+        <a href="#hero" class="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
+            <span class="text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">Home</span>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
-        <a href="#projects-list" class="text-xs font-bold uppercase text-gray-400 hover:text-white hover:bg-white/5 p-3 rounded transition-all flex items-center gap-3">
-            <span>Projects</span>
+        <a href="#projects-list" class="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
+            <span class="text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">Projects</span>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
-        <a href="#about-section" class="text-xs font-bold uppercase text-gray-400 hover:text-white hover:bg-white/5 p-3 rounded transition-all flex items-center gap-3">
-            <span>About Me</span>
+        <a href="#about-section" class="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-all cursor-pointer">
+            <span class="text-sm font-bold uppercase text-gray-400 group-hover:text-white transition-colors">About Me</span>
+            <svg class="w-4 h-4 text-gray-600 group-hover:text-indigo-500 transition-colors opacity-0 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
     </nav>
 
-    <div class="pt-6 border-t border-white/10 text-[10px] font-mono text-gray-500 space-y-3">
-        <p>athelstanbundalian@gmail.com</p>
-        <p>0968 231 3563</p>
+    <div class="border-t border-white/10 pt-8">
+        <h4 class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-4">Contact Details</h4>
         
-        <div class="flex gap-2 mt-4">
-            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/5 rounded hover:bg-blue-600 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/5 rounded hover:bg-pink-600 hover:text-white transition-all"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/5 rounded hover:bg-blue-700 hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+        <div class="space-y-4 mb-6">
+            <a href="mailto:athelstanbundalian@gmail.com" class="flex items-center gap-4 group">
+                <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-indigo-500 border border-white/5 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-500 transition-all duration-300">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="overflow-hidden">
+                    <p class="text-[9px] text-gray-500 uppercase tracking-wider mb-0.5">Email Me</p>
+                    <p class="text-xs font-bold text-gray-200 group-hover:text-white truncate transition-colors">athelstanbundalian@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="tel:09682313563" class="flex items-center gap-4 group">
+                <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-green-500 border border-white/5 group-hover:bg-green-600 group-hover:text-white group-hover:border-green-500 transition-all duration-300">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </div>
+                <div>
+                    <p class="text-[9px] text-gray-500 uppercase tracking-wider mb-0.5">Call Me</p>
+                    <p class="text-sm font-bold text-gray-200 group-hover:text-white transition-colors">0968 231 3563</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-4 gap-2">
+            <a href="https://facebook.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#0A66C2] hover:text-white transition-all duration-300">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-white hover:text-black transition-all duration-300">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+            </a>
         </div>
     </div>
 </aside>
@@ -95,7 +130,6 @@
             </div>
 
             <div class="lg:col-span-7 flex flex-col justify-center items-center lg:items-start space-y-4">
-                
                 <a href="#projects-list" class="group block relative overflow-hidden">
                     <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4">
                         Projects
@@ -116,7 +150,6 @@
                     </span>
                      <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">Let's Work Together -></span>
                 </a>
-
             </div>
         </div>
 
@@ -126,7 +159,7 @@
     </section>
 
 
-    <section id="projects-list" class="bg-[#0a0a0a] p-8 lg:p-20 lg:pl-[320px] border-t border-white/10 min-h-screen transition-all">
+    <section id="projects-list" class="bg-[#0a0a0a] p-8 lg:p-20 lg:pl-[360px] border-t border-white/10 min-h-screen transition-all">
         <div class="flex items-end justify-between mb-16">
             <div>
                 <h2 class="text-3xl font-bold uppercase tracking-tighter text-white">Selected Works</h2>
@@ -163,7 +196,7 @@
         </div>
     </section>
 
-    <section id="about-section" class="p-8 lg:p-20 lg:pl-[320px] bg-[#050505] border-t border-white/10">
+    <section id="about-section" class="p-8 lg:p-20 lg:pl-[360px] bg-[#050505] border-t border-white/10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
                 <h3 class="text-sm font-bold uppercase tracking-widest text-indigo-500 mb-6">About Me</h3>
@@ -182,7 +215,7 @@
         </div>
     </section>
 
-    <footer class="p-8 border-t border-white/10 text-center text-gray-700 text-xs lg:pl-[320px]">
+    <footer class="p-8 border-t border-white/10 text-center text-gray-700 text-xs lg:pl-[360px]">
         &copy; 2026 Athelstan Bundalian. All rights reserved.
     </footer>
 
