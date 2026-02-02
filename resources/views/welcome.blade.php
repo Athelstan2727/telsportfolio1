@@ -8,9 +8,9 @@
         <div class="w-24 h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
             <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
         </div>
-        <h2 class="text-xl font-bold text-white uppercase tracking-widest">A. Bundalian</h2>
+        <h2 class="text-xl font-bold text-white uppercase tracking-widest">Athelstan Bundalian</h2>
         <div class="px-3 py-1 mt-2 border border-indigo-500/30 rounded-full bg-indigo-500/10">
-            <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Full Stack Developer</p>
+            <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Computer Engineering Graduate</p>
         </div>
     </div>
 
@@ -58,13 +58,13 @@
             <a href="https://www.facebook.com/tels.bundalian" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all duration-300">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
             </a>
-            <a href="https://instagram.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all duration-300">
+            <a href="https://www.instagram.com/telssob/" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all duration-300">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z"></path></svg>
             </a>
-            <a href="https://linkedin.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#0A66C2] hover:text-white transition-all duration-300">
+            <a href="https://www.linkedin.com/in/athelstan-bundalian-36a43a133/" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#0A66C2] hover:text-white transition-all duration-300">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
-            <a href="https://github.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-white hover:text-black transition-all duration-300">
+            <a href="https://github.com/Athelstan2727" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-white hover:text-black transition-all duration-300">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
             </a>
         </div>
@@ -94,8 +94,8 @@
                         <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
                     </div>
 
-                    <h3 class="text-white font-bold uppercase tracking-wider text-2xl leading-none">A. Bundalian</h3>
-                    <p class="text-xs text-indigo-500 font-mono mt-1 mb-6">Full Stack Developer // AI Engineer</p>
+                    <h3 class="text-white font-bold uppercase tracking-wider text-2xl leading-none">Athelstan Bundalian</h3>
+                    <p class="text-xs text-indigo-500 font-mono mt-1 mb-6">Computer Engineering Graduate</p>
                     
                     <div class="space-y-3 text-[11px] text-gray-400 font-mono border-t border-white/10 pt-4">
                          <div class="flex items-center gap-3 group cursor-pointer hover:text-white transition-colors">
@@ -116,13 +116,13 @@
                         <a href="https://www.facebook.com/tels.bundalian" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#1877F2] hover:text-white text-[#1877F2] transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
                         </a>
-                        <a href="https://instagram.com" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#E4405F] hover:text-white text-[#E4405F] transition-all duration-300">
+                        <a href="https://www.instagram.com/telssob/" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#E4405F] hover:text-white text-[#E4405F] transition-all duration-300">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z"></path></svg>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#0A66C2] hover:text-white text-[#0A66C2] transition-all duration-300">
+                        <a href="https://www.linkedin.com/in/athelstan-bundalian-36a43a133/" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#0A66C2] hover:text-white text-[#0A66C2] transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
                         </a>
-                         <a href="https://github.com" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-white hover:text-black text-white transition-all duration-300">
+                         <a href="https://github.com/Athelstan2727" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-white hover:text-black text-white transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
                         </a>
                     </div>
@@ -134,7 +134,7 @@
                     <span class="block text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-4 group-hover:italic">
                         Projects
                     </span>
-                    <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">View Selected Works -></span>
+                    <span class="text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">View Notable Projects -></span>
                 </a>
 
                 <a href="#about-section" class="group block relative overflow-hidden">
@@ -162,10 +162,10 @@
     <section id="projects-list" class="bg-[#0a0a0a] p-8 lg:p-20 lg:pl-[360px] border-t border-white/10 min-h-screen transition-all">
         <div class="flex items-end justify-between mb-16">
             <div>
-                <h2 class="text-3xl font-bold uppercase tracking-tighter text-white">Selected Works</h2>
+                <h2 class="text-3xl font-bold uppercase tracking-tighter text-white">Notable Projects</h2>
                 <p class="text-sm text-gray-500 mt-2">Hardware & Software Integration</p>
             </div>
-            <span class="text-xs font-mono text-indigo-500">01 — 03</span>
+            <span class="text-xs font-mono text-indigo-500">2022 — 2026</span>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -182,8 +182,8 @@
                     <img src="{{ asset('images/ecoflow.jpg') }}" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="EcoFlow">
                     <div class="absolute top-3 left-3 bg-black/80 px-2 py-1 text-[10px] font-bold uppercase text-white rounded border border-white/10">IoT / AI</div>
                 </div>
-                <h3 class="text-xl font-bold text-white uppercase group-hover:text-indigo-400 transition-colors">AI-Rigation</h3>
-                <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Smart Greenhouse</p>
+                <h3 class="text-xl font-bold text-white uppercase group-hover:text-indigo-400 transition-colors">EcoFlow</h3>
+                <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">AI Powered Greenhouse System</p>
             </a>
             <a href="{{ url('/project/tugon-lipa') }}" class="group block">
                 <div class="relative w-full aspect-[4/3] bg-zinc-900 rounded-lg overflow-hidden border border-white/10 mb-4">
@@ -191,7 +191,7 @@
                     <div class="absolute top-3 left-3 bg-amber-500 text-black px-2 py-1 text-[10px] font-bold uppercase rounded">★ Award Winner</div>
                 </div>
                 <h3 class="text-xl font-bold text-white uppercase group-hover:text-indigo-400 transition-colors">TugonLipa</h3>
-                <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Innovation Conf. 2025</p>
+                <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Philippine Innovation Conf. 2025</p>
             </a>
         </div>
     </section>
@@ -201,12 +201,13 @@
             <div>
                 <h3 class="text-sm font-bold uppercase tracking-widest text-indigo-500 mb-6">About Me</h3>
                 <p class="text-xl text-gray-300 leading-relaxed mb-6">
-                    I am a Computer Engineering graduate from the University of Batangas. I specialize in building full-stack applications that interact with the physical world.
+                    I am a Computer Engineering graduate from the University of Batangas. I specialize in building full-stack applications. I am passionate in machine learning and utilizing AI Models and putting them into practice.
                 </p>
                 <div class="flex flex-wrap gap-2 mt-8">
-                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Laravel</span>
-                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Vue.js</span>
-                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Python</span>
+                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Python, C++, PHP, JavScript</span>
+                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Embedded Systems</span>
+                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">Hardware/Software Troubleshooting, Programming</span>
+                    <span class="px-3 py-1 border border-white/20 rounded-full text-xs text-gray-400">AI Models, Machine Learning</span>
                 </div>
             </div>
             <div class="relative h-full min-h-[300px] rounded-lg overflow-hidden border border-white/10">
