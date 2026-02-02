@@ -148,19 +148,19 @@
         </div>
 
         <div class="mt-40 mb-20 text-center reveal">
-            <a href="{{ url('/') }}" class="inline-block group w-full md:w-auto">
-                <div class="relative overflow-hidden px-8 py-12 md:px-24 md:py-16 border border-white/10 bg-[#0a0a0a] rounded-3xl hover:bg-red-600 hover:border-red-600 transition-all duration-500 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_60px_rgba(220,38,38,0.4)]">
+            <a href="{{ url('/') }}" class="inline-block group w-full max-w-3xl">
+                <div class="relative overflow-hidden px-6 py-8 md:px-16 md:py-10 border border-white/10 bg-[#0a0a0a] rounded-3xl hover:bg-white/5 hover:border-white/30 transition-all duration-500 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]">
                     
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-                        <span class="text-5xl md:text-7xl text-white/50 group-hover:text-white transition-all duration-500 group-hover:-translate-x-4">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+                        <span class="text-4xl md:text-5xl text-white/50 group-hover:text-white transition-all duration-500 group-hover:-translate-x-2">
                             ←
                         </span>
                         
                         <div class="text-center md:text-left">
-                            <span class="block text-xs font-mono text-red-500 group-hover:text-white/80 mb-2 tracking-[0.3em] uppercase transition-colors">
+                            <span class="block text-xs font-mono text-gray-500 group-hover:text-gray-300 mb-2 tracking-[0.3em] uppercase transition-colors">
                                 Return to Portfolio
                             </span>
-                            <span class="block text-3xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
+                            <span class="block text-2xl md:text-4xl font-black text-white uppercase tracking-tighter leading-none">
                                 Back to Home
                             </span>
                         </div>
