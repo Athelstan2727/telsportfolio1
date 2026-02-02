@@ -55,7 +55,7 @@
         </div>
 
         <div class="grid grid-cols-4 gap-2">
-            <a href="https://facebook.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all duration-300">
+            <a href="https://www.facebook.com/tels.bundalian" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#1877F2] hover:text-white transition-all duration-300">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
             </a>
             <a href="https://instagram.com" target="_blank" class="h-10 flex items-center justify-center bg-white/5 rounded-lg text-gray-400 hover:bg-[#E4405F] hover:text-white transition-all duration-300">
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="grid grid-cols-4 gap-2 mt-6 pt-4 border-t border-white/10">
-                        <a href="https://facebook.com" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#1877F2] hover:text-white text-[#1877F2] transition-all duration-300">
+                        <a href="https://www.facebook.com/tels.bundalian" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#1877F2] hover:text-white text-[#1877F2] transition-all duration-300">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
                         </a>
                         <a href="https://instagram.com" target="_blank" class="h-9 flex items-center justify-center bg-zinc-900 rounded hover:bg-[#E4405F] hover:text-white text-[#E4405F] transition-all duration-300">
