@@ -2,6 +2,53 @@
 
 @section('content')
 
+<div id="floating-id" class="fixed top-6 left-6 z-50 opacity-0 pointer-events-none -translate-y-10 transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]">
+    <div class="group relative">
+        
+        <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-white/20 cursor-pointer shadow-2xl relative z-20 transition-transform duration-300 group-hover:scale-110">
+             <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover">
+        </div>
+
+        <div class="absolute top-0 left-0 pt-4 pl-4 w-[320px] opacity-0 invisible -translate-x-4 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 transition-all duration-500 ease-out z-10">
+            <div class="bg-black/90 backdrop-blur-xl border border-white/10 p-6 rounded-2xl shadow-2xl mt-12 text-white relative overflow-hidden">
+                
+                <div class="absolute -top-10 -right-10 w-20 h-20 bg-indigo-600 blur-3xl opacity-20"></div>
+
+                <div class="relative z-10">
+                    <h4 class="font-bold uppercase tracking-[0.2em] text-[10px] text-indigo-400 mb-4">Contact Information</h4>
+                    
+                    <div class="space-y-4 text-sm text-gray-300">
+                        
+                        <div class="flex items-start gap-3 group/item">
+                            <svg class="w-5 h-5 text-gray-500 group-hover/item:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <a href="mailto:athelstanbundalian@gmail.com" class="hover:text-indigo-400 transition-colors break-all">athelstanbundalian@gmail.com</a>
+                        </div>
+
+                        <div class="flex items-center gap-3 group/item">
+                            <svg class="w-5 h-5 text-gray-500 group-hover/item:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span class="tracking-wider">0968 231 3563</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/10 my-5"></div>
+
+                    <div class="flex justify-between items-center gap-2">
+                        <a href="https://www.facebook.com/tels.bundalian" target="_blank" class="p-2 bg-white/5 rounded-lg hover:bg-indigo-600 hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/telssob/" target="_blank" class="p-2 bg-white/5 rounded-lg hover:bg-pink-600 hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/athelstan-bundalian-36a43a133/" target="_blank" class="p-2 bg-white/5 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <nav id="dynamic-nav" class="fixed z-50 flex flex-col items-end justify-center transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]
     top-0 right-0 h-screen w-full lg:w-1/2 p-12 pointer-events-none">
     
@@ -169,6 +216,10 @@
         const navContainer = document.getElementById('dynamic-nav');
         const menuList = document.getElementById('menu-list');
         const navLinks = document.querySelectorAll('.nav-link');
+        
+        // NEW: Floating ID Element
+        const floatingId = document.getElementById('floating-id');
+        
         let isScrolled = false;
 
         window.addEventListener('scroll', () => {
@@ -181,6 +232,7 @@
         });
 
         function makeSmall() {
+            // 1. Shrink Nav (Existing)
             navContainer.classList.remove('h-screen', 'items-center', 'justify-center', 'top-0');
             navContainer.classList.add('h-auto', 'top-4', 'right-4', 'p-0');
             menuList.classList.add('bg-black/90', 'backdrop-blur-md', 'border', 'border-white/10', 'p-6', 'shadow-2xl');
@@ -189,9 +241,14 @@
                 link.classList.remove('text-6xl', 'md:text-8xl');
                 link.classList.add('text-sm', 'tracking-widest');
             });
+
+            // 2. SHOW Floating ID (New)
+            // Remove 'invisible' and opacity '0', move it into view
+            floatingId.classList.remove('opacity-0', 'pointer-events-none', '-translate-y-10');
         }
 
         function makeBig() {
+            // 1. Expand Nav (Existing)
             navContainer.classList.add('h-screen', 'items-center', 'justify-center', 'top-0');
             navContainer.classList.remove('h-auto', 'top-4', 'right-4', 'p-0');
             menuList.classList.remove('bg-black/90', 'backdrop-blur-md', 'border', 'border-white/10', 'p-6', 'shadow-2xl');
@@ -200,8 +257,12 @@
                 link.classList.add('text-6xl', 'md:text-8xl');
                 link.classList.remove('text-sm', 'tracking-widest');
             });
+
+            // 2. HIDE Floating ID (New)
+            floatingId.classList.add('opacity-0', 'pointer-events-none', '-translate-y-10');
         }
 
+        // Hover Effects for the Nav Menu (Existing)
         menuList.addEventListener('mouseenter', () => {
             if (isScrolled) {
                 navLinks.forEach(link => {
