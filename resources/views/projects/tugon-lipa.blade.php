@@ -97,6 +97,27 @@
                 </div>
             </div>
 
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+                <div class="bg-[#0a0a0a] border border-white/10 p-10 rounded-3xl relative group hover:border-purple-500 transition duration-500 hover:shadow-[0_0_50px_rgba(168,85,247,0.2)] hover:-translate-y-2">
+                    <div class="absolute -top-6 -right-6 w-20 h-20 bg-purple-600/20 rounded-full blur-2xl group-hover:bg-purple-600/40 transition duration-500"></div>
+                    <div class="absolute top-8 right-8 text-purple-500 group-hover:scale-110 transition duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172V9.476c0-1.226-1.014-2.22-2.29-2.22-1.276 0-2.29.994-2.29 2.22v2.728c0 1.092-.37 2.126-.982 3.172M9.497 14.25a2.25 2.25 0 0 1-2.247 2.118v0c-.711 0-1.041-.814-.574-1.315l1.09-1.206c.6-.665.93-1.542.93-2.435V9.476c0-2.292 1.776-4.15 3.974-4.218 2.378-.074 4.332 1.83 4.332 4.218v1.946c0 .893.33 1.77.93 2.435l1.09 1.206c.467.501.137 1.315-.574 1.315v0a2.25 2.25 0 0 1-2.247-2.118" />
+                        </svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-white mb-6 group-hover:text-purple-400 transition duration-300">Award Winning</h3>
+                    <p class="text-gray-400 leading-relaxed text-lg">
+                        Awarded 2nd Place at the Philippine Innovation Conference 2025 Hackathon.
+                    </p>
+                </div>
+                
+                <div class="h-[400px] w-full relative z-20"> 
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/tugon3.jpg') }}" class="w-full h-full object-cover" alt="Award Ceremony">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="mt-40 mb-20 text-center reveal">
