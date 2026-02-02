@@ -13,15 +13,15 @@
 
 <div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-[40] hidden backdrop-blur-sm transition-opacity duration-300 lg:hidden"></div>
 
-<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full shadow-2xl">
+<aside id="sidebar" class="fixed top-0 left-0 h-screen w-[280px] md:w-[320px] bg-[#050505] border-r border-white/10 z-[50] flex flex-col p-6 md:p-8 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] -translate-x-full lg:translate-x-0 shadow-2xl">
     
     <div class="flex flex-col items-center text-center mb-8 md:mb-10">
         <div class="w-20 h-20 md:w-24 md:h-24 mb-5 rounded-xl overflow-hidden border-2 border-white/10 shadow-2xl">
             <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
         </div>
-        <h2 class="text-lg md:text-xl font-bold text-white uppercase tracking-widest">A. Bundalian</h2>
+        <h2 class="text-lg md:text-xl font-bold text-white uppercase tracking-widest">Athelstan Bundalian</h2>
         <div class="px-3 py-1 mt-2 border border-indigo-500/30 rounded-full bg-indigo-500/10">
-            <p class="text-[9px] md:text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Full Stack Developer</p>
+            <p class="text-[9px] md:text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Computer Engineering Graduate</p>
         </div>
     </div>
 
@@ -82,7 +82,7 @@
     </div>
 </aside>
 
-<div class="relative w-full bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
+<div class="relative w-full lg:w-auto lg:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
 
     <section id="hero" class="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-24 relative overflow-hidden border-b border-white/5">
         
@@ -104,7 +104,7 @@
                         <img src="{{ asset('images/profile.jpg') }}" class="w-full h-full object-cover" alt="Profile">
                     </div>
 
-                    <h3 class="text-white font-bold uppercase tracking-wider text-xl md:text-2xl leading-none">A. Bundalian</h3>
+                    <h3 class="text-white font-bold uppercase tracking-wider text-xl md:text-2xl leading-none">Athelstan Bundalian</h3>
                     <p class="text-[10px] md:text-xs text-indigo-500 font-mono mt-1 mb-6">Computer Engineering Graduate</p>
                     
                     <div class="space-y-3 text-[10px] md:text-[11px] text-gray-400 font-mono border-t border-white/10 pt-4">
@@ -231,6 +231,7 @@
 
         // Functions
         function toggleMenu() {
+            // Note: On desktop (lg), the sidebar has 'lg:translate-x-0' so this logic primarily affects mobile
             const isClosed = sidebar.classList.contains('-translate-x-full');
             
             if (isClosed) {
@@ -248,29 +249,9 @@
             }
         }
 
-        // DESKTOP SCROLL LOGIC (NEW)
-        function handleScroll() {
-            // Only apply this logic on desktop screens (>= 1024px)
-            if (window.innerWidth >= 1024) {
-                if (window.scrollY > 50) {
-                    // User scrolled down: Show Sidebar
-                    sidebar.classList.remove('-translate-x-full');
-                    sidebar.classList.add('translate-x-0');
-                } else {
-                    // User at top: Hide Sidebar
-                    sidebar.classList.add('-translate-x-full');
-                    sidebar.classList.remove('translate-x-0');
-                }
-            }
-        }
-
         // Event Listeners
         toggleBtn.addEventListener('click', toggleMenu);
         overlay.addEventListener('click', toggleMenu);
-        window.addEventListener('scroll', handleScroll); // Listen for scrolling
-        
-        // Initial check for scroll position on load
-        handleScroll(); 
 
         // Close menu when a link is clicked
         mobileLinks.forEach(link => {
