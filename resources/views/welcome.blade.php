@@ -82,7 +82,7 @@
     </div>
 </aside>
 
-<div class="relative w-full lg:w-auto lg:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
+<div id="main-content" class="relative w-full lg:w-auto lg:ml-[320px] bg-[#050505] min-h-screen text-white selection:bg-indigo-500 selection:text-white transition-all duration-300">
 
     <section id="hero" class="min-h-screen flex items-center justify-center p-6 md:p-12 lg:p-24 relative overflow-hidden border-b border-white/5">
         
@@ -136,14 +136,14 @@
                     <span class="block text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-0 lg:group-hover:translate-x-4 group-hover:italic">
                         About Me
                     </span>
-                     <span class="hidden lg:inline-block text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">My Journey & Skills -></span>
+                      <span class="hidden lg:inline-block text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">My Journey & Skills -></span>
                 </a>
 
                 <a href="mailto:athelstanbundalian@gmail.com" class="group block relative overflow-hidden">
                     <span class="block text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-white transition-all duration-300 transform group-hover:translate-x-0 lg:group-hover:translate-x-4 group-hover:italic">
                         Contact Me
                     </span>
-                     <span class="hidden lg:inline-block text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">Let's Work Together -></span>
+                      <span class="hidden lg:inline-block text-sm font-mono text-gray-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pl-2">Let's Work Together -></span>
                 </a>
             </div>
         </div>
@@ -224,6 +224,7 @@
         // Elements
         const toggleBtn = document.getElementById('mobile-menu-toggle');
         const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('main-content'); // New Element Select
         const overlay = document.getElementById('mobile-overlay');
         const menuIcon = document.getElementById('menu-icon');
         const closeIcon = document.getElementById('close-icon');
@@ -249,9 +250,48 @@
             }
         }
 
+        // NEW: Scroll Handler for Desktop Sidebar
+        function handleDesktopScroll() {
+            // Only apply this logic on desktop screens (lg breakpoint is 1024px)
+            if (window.innerWidth >= 1024) {
+                // Threshold: 50px (you can adjust this number)
+                if (window.scrollY < 50) {
+                    // AT TOP: Hide Sidebar & Expand Content
+                    
+                    // 1. Hide Sidebar: remove the forcing class (lg:translate-x-0) and add hide class
+                    sidebar.classList.remove('lg:translate-x-0');
+                    sidebar.classList.add('-translate-x-full');
+                    
+                    // 2. Expand Content: Remove the left margin
+                    mainContent.classList.remove('lg:ml-[320px]');
+                    
+                } else {
+                    // SCROLLED DOWN: Show Sidebar & Shrink Content
+                    
+                    // 1. Show Sidebar
+                    sidebar.classList.add('lg:translate-x-0');
+                    sidebar.classList.remove('-translate-x-full');
+                    
+                    // 2. Shrink Content (Add margin back)
+                    mainContent.classList.add('lg:ml-[320px]');
+                }
+            } else {
+                 // On mobile, ensure we don't accidentally leave desktop classes messing up the layout
+                 // if resizing the window
+                 mainContent.classList.remove('lg:ml-[320px]');
+            }
+        }
+
         // Event Listeners
         toggleBtn.addEventListener('click', toggleMenu);
         overlay.addEventListener('click', toggleMenu);
+
+        // Scroll Listener
+        window.addEventListener('scroll', handleDesktopScroll);
+        // Run once on load in case page is refreshed halfway down
+        handleDesktopScroll();
+        // Run on resize to fix layout if window size changes
+        window.addEventListener('resize', handleDesktopScroll);
 
         // Close menu when a link is clicked
         mobileLinks.forEach(link => {
