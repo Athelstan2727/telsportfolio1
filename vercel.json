@@ -6,8 +6,8 @@
     },
     "routes": [
         {
-            "src": "/(images|img|css|js|storage)/(.*)",
-            "dest": "/$1/$2"
+            "src": "/(images|img|css|js|storage|favicon.ico)/(.*)",
+            "dest": "/public/$1/$2"
         },
         {
             "src": "/(.*)",
