@@ -11,11 +11,6 @@
         opacity: 1;
         transform: translateY(0);
     }
-    
-    /* Smooth transition for the image pop-out */
-    .pop-out-image {
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
 </style>
 
 <div class="min-h-screen bg-[#050505] text-white selection:bg-red-500 selection:text-white">
@@ -74,34 +69,16 @@
                 </div>
                 
                 <div class="h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-red-600/50 hover:shadow-[0_0_100px_rgba(220,38,38,0.3)]">
-                        
-                        <img src="{{ asset('images/contracts1.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Contracts Hub Dashboard">
-                        
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/contracts1.jpg') }}" class="w-full h-full object-cover" alt="Contracts Hub Dashboard">
                     </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
                 <div class="order-2 lg:order-1 h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-orange-500/50 hover:shadow-[0_0_100px_rgba(249,115,22,0.3)]">
-                        
-                        <img src="{{ asset('images/contracts2.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Digital Workflow">
-                             
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/contracts2.jpg') }}" class="w-full h-full object-cover" alt="Digital Workflow">
                     </div>
                 </div>
 
@@ -130,17 +107,8 @@
                 </div>
                 
                 <div class="h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-rose-500/50 hover:shadow-[0_0_100px_rgba(244,63,94,0.3)]">
-                        
-                        <img src="{{ asset('images/contracts3.jpg') }}" 
-                             class="w-full h-full object-cover transition-all duration-700 
-                                    hover:object-contain hover:scale-100" 
-                             alt="Search Interface">
-                        
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">
-                            Move cursor away to close
-                        </div>
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/contracts3.jpg') }}" class="w-full h-full object-cover" alt="Search Interface">
                     </div>
                 </div>
             </div>

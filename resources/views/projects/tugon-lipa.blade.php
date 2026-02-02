@@ -11,11 +11,6 @@
         opacity: 1;
         transform: translateY(0);
     }
-    
-    /* Smooth transition for the image pop-out */
-    .pop-out-image {
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
 </style>
 
 <div class="min-h-screen bg-[#050505] text-white selection:bg-blue-500 selection:text-white">
@@ -77,53 +72,28 @@
                 </div>
                 
                 <div class="h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-blue-500/50 hover:shadow-[0_0_100px_rgba(59,130,246,0.3)]">
-                        <img src="{{ asset('images/tugon1.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Reporting Interface">
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/tugon1.jpg') }}" class="w-full h-full object-cover" alt="Reporting Interface">
                     </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
                 <div class="order-2 lg:order-1 h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-amber-500/50 hover:shadow-[0_0_100px_rgba(245,158,11,0.3)]">
-                        <img src="{{ asset('images/tugon2.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Real Time Dashboard">
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
+                    <div class="absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="{{ asset('images/tugon2.jpg') }}" class="w-full h-full object-cover" alt="Heatmap Data">
                     </div>
                 </div>
 
                 <div class="order-1 lg:order-2 bg-[#0a0a0a] border border-white/10 p-10 rounded-3xl relative group hover:border-amber-500 transition duration-500 hover:shadow-[0_0_50px_rgba(245,158,11,0.2)] hover:-translate-y-2">
                     <div class="absolute -top-6 -left-6 w-20 h-20 bg-amber-500/20 rounded-full blur-2xl group-hover:bg-amber-500/40 transition duration-500"></div>
                     <div class="absolute top-8 right-8 text-amber-500 group-hover:scale-110 transition duration-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg>
                     </div>
-                    <h3 class="text-4xl font-bold text-white mb-6 group-hover:text-amber-500 transition duration-300">Real-Time Tracking</h3>
+                    <h3 class="text-4xl font-bold text-white mb-6 group-hover:text-amber-500 transition duration-300">Data Analytics</h3>
                     <p class="text-gray-400 leading-relaxed text-lg">
-                        Authorities can view tickets as they come in on a live dashboard, prioritizing critical incidents and dispatching response teams immediately.
+                        Admins can view real-time data reports and heatmaps of incidents in Lipa City, allowing for faster response times and better resource allocation.
                     </p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
-                <div class="bg-[#0a0a0a] border border-white/10 p-10 rounded-3xl relative group hover:border-sky-500 transition duration-500 hover:shadow-[0_0_50px_rgba(14,165,233,0.2)] hover:-translate-y-2">
-                    <div class="absolute -top-6 -right-6 w-20 h-20 bg-sky-500/20 rounded-full blur-2xl group-hover:bg-sky-500/40 transition duration-500"></div>
-                    <div class="absolute top-8 right-8 text-sky-500 group-hover:scale-110 transition duration-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                    </div>
-                    <h3 class="text-4xl font-bold text-white mb-6 group-hover:text-sky-400 transition duration-300">2nd Place in 2025 Philippine Innovation Conference Hackathon</h3>
-                    <p class="text-gray-400 leading-relaxed text-lg">
-                        They earned 2nd Place at the 2025 Philippine Innovation Conference 24-Hour Hackathon, outperforming 144 competing teams through innovation, teamwork, and strong problem-solving under pressure.
-                    </p>
-                </div>
-                
-                <div class="h-[400px] w-full relative z-20"> 
-                    <div class="pop-out-image absolute inset-0 w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-zoom-in 
-                                hover:fixed hover:inset-4 hover:z-[9999] hover:bg-black/95 hover:border-sky-500/50 hover:shadow-[0_0_100px_rgba(14,165,233,0.3)]">
-                        <img src="{{ asset('images/tugon3.jpg') }}" class="w-full h-full object-cover transition-all duration-700 hover:object-contain hover:scale-100" alt="Admin Panel">
-                        <div class="absolute bottom-10 left-0 w-full text-center opacity-0 hover:opacity-100 transition duration-500 text-white/50 text-sm uppercase tracking-widest pointer-events-none">Move cursor away to close</div>
-                    </div>
                 </div>
             </div>
 
@@ -172,7 +142,7 @@
         };
 
         window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); 
+        revealOnScroll(); // Trigger once on load
     });
 </script>
 @endsection
